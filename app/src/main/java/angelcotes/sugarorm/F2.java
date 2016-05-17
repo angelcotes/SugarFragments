@@ -61,6 +61,7 @@ public class F2 extends Fragment {
         Toast.makeText(getContext(), "Datos Guardados con exito", Toast.LENGTH_SHORT).show();
         lastName.setText("");
         name.setText("");
+        name.requestFocus();
         EventBus.getDefault().post(new MessageChangeF3(per));
     }
 
