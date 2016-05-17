@@ -59,6 +59,8 @@ public class F2 extends Fragment {
     public void onMessageEvent(MessageChangeF2 event){
         Book per = new Book(name.getText().toString(), lastName.getText().toString());
         Toast.makeText(getContext(), "Datos Guardados con exito", Toast.LENGTH_SHORT).show();
+        lastName.setText("");
+        name.setText("");
         EventBus.getDefault().post(new MessageChangeF3(per));
     }
 
