@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.augustosalazar.as_android_importantlibraries.Fragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nombre"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_vertical"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_person"
+            android:layout_gravity="top|center|left"
+            android:layout_row="3"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Apellido"
+            android:id="@+id/textView4"
+            android:layout_gravity="top|left"
+            android:layout_row="4"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/last_name"
+            android:layout_gravity="top"
+            android:layout_row="5"
+            android:layout_column="0" />
+
+    </GridLayout>
+</FrameLayout>
